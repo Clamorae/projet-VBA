@@ -1,2 +1,3 @@
 # projet-VBA
-kingsway like dasn l'environnement de l'utbm 
+kingsway like dans l'environnement de l'utbm 
+ecrivez ici les idées pour améliorer le jeu
