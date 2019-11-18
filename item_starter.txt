@@ -1,0 +1,11 @@
+Sub item_starter()
+Dim ecocup()
+Set ecocup = Array(0,1,0)
+
+Dim stylo_recyclable()
+Set stylo_recyclable = Array(1,0,0)
+
+Dim t-shirt_integ()
+Set t-shirt_integ = Array(0,0,10)
+
+End Sub
