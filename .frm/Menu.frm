@@ -14,7 +14,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Sub UserForm_Initialize()
-     Image1.Picture = LoadPicture(ActiveWorkbook.Path & "\title.gif") 'permet de charger une image présente dans le fichier du document'
+     Image1.Picture = LoadPicture(ActiveWorkbook.Path & "\pics\title.gif") 'permet de charger une image présente dans le fichier du document'
 End Sub
 
 Private Sub CommandButton3_Click() 'Permet de quitter le programme'
