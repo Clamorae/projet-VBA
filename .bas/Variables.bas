@@ -1,5 +1,5 @@
 Attribute VB_Name = "Variables"
-Sub variables()
+Sub var()
 
     Dim health As Integer          'définit la variable de la vie du joueur
     health = 100
@@ -11,14 +11,7 @@ Sub variables()
     Dim atk As Integer             'definit la variable de l'attaque de joueur
     atk = 1
 
-    Dim inventory(6) As String
-    inventory(0) = "nique"
-    
-    
-    
-    
-    
-    
-    
+    Dim name As String
+    Dim surname As String
     
 End Sub

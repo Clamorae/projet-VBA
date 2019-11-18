@@ -13,6 +13,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+
 Sub UserForm_Initialize()
      Image1.Picture = LoadPicture(ActiveWorkbook.Path & "\pics\title.gif") 'permet de charger une image présente dans le fichier du document'
 End Sub
@@ -26,5 +27,10 @@ End Sub
 Private Sub CommandButton2_Click()
     If MsgBox("placeholder", vbOKOnly, "Infos") = vbOK Then
     End If
+End Sub
+
+Private Sub CommandButton1_Click()
+    Welcome.Show (0)
+    Unload Me
 End Sub
 
