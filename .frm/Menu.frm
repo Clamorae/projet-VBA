@@ -14,7 +14,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
-Sub UserForm_Initialize()
+Sub UserForm_Initialize() 'Sub qui se lance lorsque l'UserForm est initialisé'
      Image1.Picture = LoadPicture(ActiveWorkbook.Path & "\pics\title.gif") 'permet de charger une image présente dans le fichier du document'
 End Sub
 
@@ -25,12 +25,17 @@ Private Sub CommandButton3_Click() 'Permet de quitter le programme'
 End Sub
 
 Private Sub CommandButton2_Click()
-    If MsgBox("placeholder", vbOKOnly, "Infos") = vbOK Then
+    If MsgBox("on verras après", vbOKOnly, "Infos") = vbOK Then 'lance un MsgBox donnant des infos sur le jeu'
     End If
 End Sub
 
 Private Sub CommandButton1_Click()
     Welcome.Show (0)
     Unload Me
+End Sub
+
+
+Private Sub UserForm(ByVal Cancel As MSForms.ReturnBoolean)
+    MsgBox "nope"
 End Sub
 
