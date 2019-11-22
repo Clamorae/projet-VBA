@@ -1,20 +1,31 @@
 Attribute VB_Name = "Variables"
-Sub var()
+Option Explicit
 'Valeur int----------------------------------------------'
 
-    Dim hp As Integer          'définit la variable de la vie du joueur
-    health = 100
+    Public hp As Integer          'définit la variable de la vie du joueur
+
     
-    Dim xp As Integer         'definit la variable de credits, qui correspond à l'expérience du joueur
-    credits = 0
+    Public xp As Integer         'definit la variable de credits, qui correspond à l'expérience du joueur
     
     
-    Dim atk As Integer             'definit la variable de l'attaque de joueur
-    atk = 0
     
-    Dim def As Integer             'definit la variable de l'attaque de joueur
-    def = 0
+    Public atk As Integer             'definit la variable de l'attaque de joueur
+    
+    
+    Public def As Integer             'definit la variable de l'attaque de joueur
+    
 'Valeur str----------------------------------------------'
-    Dim name As String 'le nom seras assigné lors de la création de perso'
-    Dim gender As String
+    Public Cname As String 'le nom seras assigné lors de la création de perso'
+    Public Cgender As String
+'variables autres----------------------------------------'
+    Public wkb As Workbook
+
+
+
+Sub assignVariables() 'déclaration des variables'
+    hp = 100
+    xp = 0
+    atk = 0
+    def = 0
+    Set wkb = ThisWorkbook
 End Sub
