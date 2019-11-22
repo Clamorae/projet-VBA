@@ -14,15 +14,22 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub CommandButton1_Click()
-    If (TName.value = vbNullString Or TSurname.value = vbNullString) Then
+    If (TName.Value = vbNullString Or TSurname.Value = vbNullString) Then
         MsgBox "veulliez entrer un nom et prénom valide"
     Else
-        name = TName.value
-        If girl.value = True Then
-            gender = "girl"
+        Cname = TSurname.Value & " " & TName.Value
+        If girl.Value = True Then
+            Cgender = "girl"
         Else
-            gender = "boy"
+            Cgender = "boy"
         End If
+        CommandBars.ExecuteMso "MinimizeRibbon"
+        wkb.Sheets("Sevenans").Activate
+        StartMessage.Show (0)
+        Unload Me
     End If
 End Sub
 
+Private Sub UserForm_Click()
+
+End Sub
