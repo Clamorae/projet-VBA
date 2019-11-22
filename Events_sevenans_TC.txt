@@ -1,5 +1,5 @@
 1 Entrée principale l'école se dresse devant vous, vous y etes enfin un choix se dresse devant vous:
--entrer dans l'école=> combat d'entrainement contre test evaluation math/tuto
+-entrer dans l'école=>=>va en p108 combat d'entrainement contre test evaluation math/tuto
 -rentrer chez vous=>GAME OVER
 
 2 T306 vous etes dans cet anmphi depuis deux heures et un nouveau cours se profile:
@@ -37,9 +37,11 @@ faut passser pour quitter
 7 BU entrainement pour la suite
 demande si il veut booster ses stats :
 fait pop boss
+boss booster sur la stat qu'il va up
 si boss battu up stat de maniere aléatoire
 boss:devoir ou revision
 
 shop pas event peux a aller qd tu veux et aussi souvent que tu tu veux
 3events a valider pour reussir 1année et 3 autres pour la secondes années
 
+=>fin de chaque année doit affronter un boss=finaux 
