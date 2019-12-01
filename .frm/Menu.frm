@@ -14,8 +14,9 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
-Sub UserForm_Initialize() 'Sub qui se lance lorsque l'UserForm est initialisé'
-     Image1.Picture = LoadPicture(ActiveWorkbook.Path & "\pics\title.gif") 'permet de charger une image présente dans le fichier du document'
+Sub UserForm_Initialize() 'Sub qui se lance lorsque l'UserForm est initialisé
+    Image1.Picture = LoadPicture(wkb.Path & "\pics\title.gif") 'permet de charger l'image title.gif, wkb.Path étant le chemin du classeur, donc du fichier Excel
+    Call PlayMusic("jojo.wav") 'voir le module Functions
 End Sub
 
 Private Sub CommandButton3_Click() 'Permet de quitter le programme'
@@ -30,12 +31,7 @@ Private Sub CommandButton2_Click()
 End Sub
 
 Private Sub CommandButton1_Click()
-    Welcome.Show (0)
+    Welcome.Show (0) 'l'agument 0 permet à plusieurs UserForms d'être affiché à la fois.
     Unload Me
-End Sub
-
-
-Private Sub UserForm(ByVal Cancel As MSForms.ReturnBoolean)
-    MsgBox "nope"
 End Sub
 

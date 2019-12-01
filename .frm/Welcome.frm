@@ -14,22 +14,18 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub CommandButton1_Click()
-    If (TName.Value = vbNullString Or TSurname.Value = vbNullString) Then
-        MsgBox "veulliez entrer un nom et prénom valide"
+    If (TName.Value = vbNullString Or TSurname.Value = vbNullString) Then 'Force le joueur à entrer un nom
+        MsgBox "veulliez entrer un nom et prénom"
     Else
         Cname = TSurname.Value & " " & TName.Value
         If girl.Value = True Then
             Cgender = "girl"
         Else
-            Cgender = "boy"
+            Cgender = "boy" 'asoocie "boy" ou "girl" à la variable Cgender en fonction du choix du joueur
         End If
-        CommandBars.ExecuteMso "MinimizeRibbon"
-        wkb.Sheets("Sevenans").Activate
+        wkb.Sheets("Sevenans").Activate 'affiche la map de sevenans
         StartMessage.Show (0)
         Unload Me
     End If
 End Sub
 
-Private Sub UserForm_Click()
-
-End Sub

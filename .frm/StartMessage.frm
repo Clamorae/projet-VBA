@@ -13,6 +13,12 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+
 Sub UserForm_Initialize()
-    Text.Caption = Replace(Text, "NAME", Cname)
+    Text.Caption = Replace(Text, "NAME", Cname) 'ajoute le nom du joueur dans l'UserForm
+End Sub
+
+Private Sub CommandButton1_Click()
+    Main.Show (0)
+    Unload Me
 End Sub
