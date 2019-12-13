@@ -6,7 +6,6 @@ Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} Main
    ClientTop       =   465
    ClientWidth     =   3285
    OleObjectBlob   =   "Main.frx":0000
-   StartUpPosition =   1  'CenterOwner
 End
 Attribute VB_Name = "Main"
 Attribute VB_GlobalNameSpace = False

@@ -24,4 +24,13 @@ Sub StopMusic() 'cette fonction permet d'arrêter la musique. En effet, un "Path"
     Call Playsound(vbNullString, &H1)
 End Sub
 
+Sub battle_tendency()
+    Call assignVariables
+    mstHP = CInt("69")
+    mstHPmax = 69
+    mstAtk = 2
+    mstSpeed = 1
+    mstDef = 0
+    Battle.Show (0)
+End Sub
 
