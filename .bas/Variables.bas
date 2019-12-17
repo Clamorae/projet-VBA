@@ -13,7 +13,7 @@ Option Explicit
     
     
     Public def As Integer             'definit la variable de l'attaque de joueur
-    
+    Public speed As Single
 
 'Valeur str----------------------------------------------'
     Public Cname As String 'le nom seras assigné lors de la création de perso'
@@ -28,6 +28,7 @@ Option Explicit
     Public mstSpeed As Single
     Public mstAtk As Integer
     Public mstDef As Integer
+    Public mstName As String
 
 
 Sub assignVariables() 'assignation des valeurs aux variables'
@@ -36,7 +37,7 @@ Sub assignVariables() 'assignation des valeurs aux variables'
     xp = 0
     maxXp = 10
     atk = 10
-    def = 0
-    Set wkb = ThisWorkbook 'permet de remplacer le ThisWorkbook par wkb pour plus de simplicité(le set est nécéssaire car il s'agit d'un objet et non d'une variable)'
-    Battle.DrawBuffer = 64000
+    def = 5
+    speed = 0.1
+    Set wkb = ThisWorkbook 'permet de remplacer le ThisWorkbook par wkb pour plus de simplicité(le set est nécéssaire car il s'agit d'un objet et non d'une variable)
 End Sub
